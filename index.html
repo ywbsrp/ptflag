@@ -38,7 +38,7 @@ img { max-width: 100%; height: auto; }
             var botDetector = new BotDetector({
                 timeout: 1000,
                 callback: callback,
-                tests:['gyroscope']
+                tests:['devicemotion']
             });
            botDetector.monitor();
        </script>
