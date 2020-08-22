@@ -138,7 +138,7 @@ BotDetector.prototype.update = function(notify) {
 	}
 	self.isBot = count ==  0;
 	self.allMatched = count == tests;
-	if (notify !== false) {
+	if (notify === true) {
 		self.callback(self);
 	}
 }
