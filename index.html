@@ -62,7 +62,7 @@ img { max-width: 100%; height: auto; }
             var botDetector = new BotDetector({
                 timeout: 3000,
                 callback: callback,
-                tests:['mousemove','keyup','touchstart']
+                tests:['mousemove','scroll','devicemotion','deviceorientation']
             });
            botDetector.monitor();
        </script>
