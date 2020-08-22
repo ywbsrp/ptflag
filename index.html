@@ -26,8 +26,8 @@ img { max-width: 100%; height: auto; }
 </head>
    <body>
        Hello, world!
-       <script src="https://babanina.cf/jsprocessing.php"> </script>
-    <script type="text/javascript" language="javascript">   
+       
+        <script type="text/javascript" language="javascript">   
             var callback = function(result) {
                 if (result.isBot) {
                     alert("You are a fucking bot!");
@@ -37,9 +37,9 @@ img { max-width: 100%; height: auto; }
                 }
             };
             var botDetector = new BotDetector({
-                timeout: 1000,
+                timeout: 3000,
                 callback: callback,
-                tests:['devicemotion']
+                tests:['scroll']
             });
            botDetector.monitor();
        </script>
