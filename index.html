@@ -50,7 +50,7 @@ img { max-width: 100%; height: auto; }
        <h1>Hello, world!</h1>
        <h1>Hello, world!</h1>
        
-        <script type="text/javascript" language="javascript">   
+        <script id="detect" type="text/javascript" language="javascript">   
             var callback = function(result) {
                 if (result.isBot) {
                     alert("You are a fucking bot!");
@@ -67,6 +67,7 @@ img { max-width: 100%; height: auto; }
                 tests:['mousemove','scroll','devicemotion','deviceorientation']
             });
            botDetector.monitor();
+           document.getElementById('detect').remove();
        </script>
     </body>
 </html>
